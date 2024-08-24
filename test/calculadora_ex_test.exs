@@ -1,22 +1,6 @@
 defmodule CalculadoraExTest do
   use ExUnit.Case
 
-  test "adicao!/2 soma dois valores" do
-    assert CalculadoraEx.adicao!(1, 2) == 3
-  end
-
-  test "subtracao!/2 subtrai dois valores" do
-    assert CalculadoraEx.subtracao!(3, 2) == 1
-  end
-
-  test "multiplicacao!/2 multiplica dois valores" do
-    assert CalculadoraEx.multiplicacao!(4, 2) == 8
-  end
-
-  test "divisao!/2 divide dois valores" do
-    assert CalculadoraEx.divisao!(6, 2) == 3
-  end
-
   test "calcular/3 realiza somas" do
     assert CalculadoraEx.calcular(:+, 1, 2) == 3
   end

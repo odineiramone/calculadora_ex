@@ -1,21 +1,29 @@
 # CalculadoraEx
 
-**TODO: Add description**
+Calculadora simples feita em Elixir 😊.
 
-## Installation
+## Instalação
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `calculadora_ex` to your list of dependencies in `mix.exs`:
+Não pretendo deixar esse código disponivel via Hex. Para instalá-lo direto do github:
 
 ```elixir
-def deps do
-  [
-    {:calculadora_ex, "~> 0.1.0"}
-  ]
-end
+Mix.install([
+  calculadora_ex: [github: "odineiramone/calculadora_ex"]
+])
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/calculadora_ex>.
+## Como utilizar
 
+```elixir
+CalculadoraEx.calcular(:+, 1, 2)
+#=> 3
+
+CalculadoraEx.calcular(:-, 5, 3)
+#=> 2
+
+CalculadoraEx.calcular(:*, 4, 3)
+#=> 12
+
+CalculadoraEx.calcular(:/, 9, 3)
+#=> 3
+```
